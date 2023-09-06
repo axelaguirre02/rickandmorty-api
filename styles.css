@@ -1,0 +1,74 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: rgb(255, 255, 255);
+  background-color: rgb(41, 33, 59);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1 {
+  font-size: 40px;
+  padding-top: 10px;
+  text-align: center;
+}
+
+.contenedor {
+  width: 75%;
+  max-width: 83%;
+  margin: auto;
+  padding-top: 50px;
+  padding-bottom: 90px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+}
+
+.contenedor .personaje {
+  text-align: center;
+}
+
+.contenedor .personaje .nombre {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.contenedor .personaje .imagen {
+  width: 100%;
+  margin-bottom: 10px;
+  border-radius: 15px;
+}
+
+.paginacion {
+  bottom: 0;
+  width: 100%;
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+  gap: 20px;
+  background: rgb(16, 10, 31);
+}
+
+.paginacion button {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-weight: 600;
+  color: rgb(255, 255, 255);
+  background: rgb(36, 23, 68);
+  height: 50px;
+  width: 150px;
+  display: flex;
+  border: none;
+  border-radius: 100px;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s ease all;
+}
+
+.paginacion button:hover {
+  background: rgb(19, 124, 50);
+}
